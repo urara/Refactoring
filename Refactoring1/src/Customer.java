@@ -30,7 +30,7 @@ public class Customer {
 			//新作を2日以上から借りた場合はボーナスポイント
 			if((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1)frequentRenterPoints ++;
 			
-			//この貸し出しに関する数値の表示
+			//この貸し出しに関する数値の表示1
 			result += "\t" + each.getMovie().getTitle() + "\t" +
 					String.valueOf(each.getCharge()) + "\n";
 			totalAmount += each.getCharge();
