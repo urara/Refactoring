@@ -26,9 +26,7 @@ public class Customer {
 			Rental each = (Rental)rentals.nextElement();
 	
 			//レンタルポイントを加算
-			frequentRenterPoints ++;
-			//新作を2日以上から借りた場合はボーナスポイント
-			if((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1)frequentRenterPoints ++;
+			frequentRenterPoints += each.getFrequentPoints();
 			
 			//この貸し出しに関する数値の表示1
 			result += "\t" + each.getMovie().getTitle() + "\t" +
