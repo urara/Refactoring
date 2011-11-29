@@ -8,7 +8,7 @@ public class Concrete {
 		// TODO Auto-generated method stub
 		
 		Movie movie1 = new Movie("MATLIX", Movie.REGULAR);
-		Movie movie2 = new Movie("Summer wars", Movie.CHILDRENS);
+		Movie movie2 = new Movie("Pokemon", Movie.CHILDRENS);
 		Movie movie3 = new Movie("NEWER", Movie.NEW_RELEASE);
 		
 		Rental rental1 = new Rental(movie1, 3);

@@ -7,7 +7,7 @@ public class CustomerTest {
 	public void StatementTest(){
 		
 		Movie movie1 = new Movie("MATLIX", Movie.REGULAR);
-		Movie movie2 = new Movie("Summer wars", Movie.CHILDRENS);
+		Movie movie2 = new Movie("Pokemon", Movie.CHILDRENS);
 		Movie movie3 = new Movie("NEWER", Movie.NEW_RELEASE);
 		
 		Rental rental1 = new Rental(movie1, 3);
@@ -21,7 +21,7 @@ public class CustomerTest {
 		
 		String result = "Rental Record for John\n" +
 						"\tMATLIX\t3.5\n" +
-						"\tSummer wars\t3.0\n" +
+						"\tPokemon\t3.0\n" +
 						"\tNEWER\t15.0\n" +
 						"Amount owed is 21.5\n" +
 						"You earned 4 frequent renter points";
